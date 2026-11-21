@@ -1,0 +1,39 @@
+KYLE TRAN - PORTFOLIO SITE
+==========================
+
+You only need Node.js. npm comes with it.
+Install Node 20 or newer (22+ recommended): https://nodejs.org
+
+1. Open a terminal in THIS folder (the one containing package.json):
+
+       cd path\to\kyle-tran-portfolio
+
+2. Install the dependencies (one time, creates node_modules):
+
+       npm install
+
+3. Start the site:
+
+       npm run dev
+
+4. Open http://localhost:5173 in your browser.
+   Press Ctrl+C in the terminal to stop it.
+
+OTHER COMMANDS
+  npm run build      Production build into dist\
+  npm run preview    Serve the production build
+  npm run typecheck  TypeScript check
+  npm test           API tests (Node's built-in test runner)
+
+WHAT'S INSIDE
+  src\               All pages, components, styles and site copy
+  public\images\     Photos (yours is kyle.webp)
+  src\data\projects.ts   Every word of content, in one file
+  index.html         Page title and meta description
+  deploy.json        Points at the build output, for deploying
+  wrangler.jsonc     Cloudflare Worker config for the contact form
+  README.md          Same info, plus where to edit things
+
+node_modules is NOT included: npm install recreates it.
+The site works fully offline apart from the two web fonts, which are
+bundled in node_modules and copied into the build.
